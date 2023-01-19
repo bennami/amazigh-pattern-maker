@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Amazigh Symbols</h1>
+
+    <div class="settings">
+        <h2>Settings</h2>
+
+        <p>Items:</p>
+        <input id="columns" type="range" min="1" max="20" value="5">
+        <input id="rows" type="range" min="1" max="20" value="5">
+     
+        <p>Colors:</p>
+        <select id="colors">
+            <option value="purplish">Purplish</option>
+            <option value="redish">Redish</option>
+            <option value="blueish">Blueish</option>
+            <option value="greenish">Greenish</option>
+            <option value="brownish">Brownish</option>
+        </select>
+       <button id="flip-pattern">flip</button>
+       <button id="random-color">color</button>
+       <div class="choice-symbols">
+       
+        <input type="checkbox" class="checkbox" name="symbol-01" id="check1">
+        <label class="label" for="check1"><img src="symbols/symbol-01.svg" width="35" height="35"></label>
+      
+       
+            <input type="checkbox" class="checkbox" name="symbol-02" id="check2">
+        <label class="label" for="check2"><img src="symbols/symbol-02.svg" width="35" height="35"></label>
+        
+       
+            <input type="checkbox" class="checkbox" name="symbol-03" id="check3">
+        <label class="label" for="check3"><img src="symbols/symbol-03.svg" width="35" height="35"></label>
+      
+      
+            <input type="checkbox" class="checkbox" name="symbol-04" id="check4">
+        <label class="label" for="check4"><img src="symbols/symbol-04.svg" width="35" height="35"></label>
+        
+      
+            <input type="checkbox" class="checkbox" name="symbol-05" id="check5">
+        <label class="label" for="check5"><img src="symbols/symbol-05.svg" width="35" height="35"></label>
+      
+      
+            <input type="checkbox" class="checkbox" name="symbol-06" id="check6">
+        <label class="label" for="check6"><img src="symbols/symbol-06.svg" width="35" height="35"></label>
+  
+      
+            <input type="checkbox" class="checkbox" name="symbol-07" id="check7">
+        <label class="label" for="check7"><img src="symbols/symbol-07.svg" width="35" height="35"></label>
+       
+    
+            <input type="checkbox" class="checkbox" name="symbol-08" id="check8">
+        <label class="label" for="check8"><img src="symbols/symbol-08.svg" width="35" height="35"></label>    
+       </div>
+    </div>
+    <div id="container"></div>
+    <div id="svg-container" class="svg-container"></div>
+<script src="script.js"></script>
+</body>
+</html>
