@@ -26,24 +26,16 @@ checkboxes.forEach(checkbox => {
     })
 
 });
+let columns = 4;
 
-const symbolEl = document.getElementById('symbols');
-let symbol = [...symbolEl.value];
 
-let selectedOptions = ["symbol-03", "symbol-04", "symbol-05", "symbol-06", "symbol-07", "symbol-08", "symbol-09", "symbol-10"];
-symbolEl.addEventListener('change', (e) => {
-  selectedOptions = [...symbolEl.options].filter(o => o.selected).map(o => o.value);
-  console.log(selectedOptions);
-  generateRows()
-});
-let columns = 7;
 colmunsEl.addEventListener('change', (e) => {
   console.log(columns);
   columns = e.target.value;
   generateRows()
 });
 
-let rows = 7;
+let rows = 4;
 rowsEl.addEventListener('change', (e) => {
   console.log(rows);
   rows = e.target.value;
