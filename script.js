@@ -3,7 +3,7 @@ const colmunsEl = document.getElementById('columns');
 const rowsEl = document.getElementById('rows');
 const colorsEl = document.getElementById('colors');
 const colorsObj = {
-	'purplish': ['#6a1ca1', '#CA2996', '#92208E', '#4C1981'],
+	'purplish': ['#832cc1', '#d635a3', '#b544b1', '#733baf'],
 	'redish': ['#f9d5bb', '#f66767', '#d35656', '#3c3d47'],
 	'greenish': ['#42b883', '#347474', '#35495e', '#ff7e67'],
 	'brownish': ['#a64a39', '#693d3d', '#ba5536', '#a43820'],
@@ -12,7 +12,7 @@ const colorsObj = {
 
 let colors = [...colorsObj.redish];
 const checkboxes = document.querySelectorAll('.checkbox');
-let choices = ["symbol-01"];
+let choices = ["symbol-01", "symbol-02"];
 
 checkboxes.forEach(checkbox => {
   checkbox.addEventListener('change', (e) => {
@@ -24,20 +24,16 @@ checkboxes.forEach(checkbox => {
       }
       generateRows();
     })
-
 });
-let columns = 4;
-
+let columns = 6;
 
 colmunsEl.addEventListener('change', (e) => {
-  console.log(columns);
   columns = e.target.value;
   generateRows()
 });
 
 let rows = 4;
 rowsEl.addEventListener('change', (e) => {
-  console.log(rows);
   rows = e.target.value;
   generateRows()
 });

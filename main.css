@@ -1,69 +1,78 @@
-*{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Courier New", Courier, monospace;
 }
-.svg-container{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
+.svg-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
 }
-.symbol{
-    width:100px;
+.symbol {
+  width: 100px;
 }
-.symbol:hover{
-    cursor: pointer;
-}
-
-#container{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 1rem;
-    flex-wrap: wrap;
-}
-.column{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+.symbol:hover {
+  cursor: pointer;
 }
 
-.row{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
+#container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  flex-wrap: wrap;
+}
+.column {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
 
 input[type="checkbox"] {
-    display: none;
-  }
+  display: none;
+}
 
-  .choice-symbols{
-    display: flex;
-  }
+.choice-symbols {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 1rem;
+  border: 1px solid black;
+  justify-content: center;
+}
 
-  .label{
-    cursor: pointer;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: .25rem;
-    margin: .25rem;
-  }
-  .label:hover{
-    background-color: #d34444;
-  }
-  input[type="checkbox"] + label{
-    border: 1px solid transparent;
-  }
-  input[type="checkbox"]:checked + label {
-    border: 1px solid black;
-  }
-  
+.label {
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.25rem;
+  margin: 0.25rem;
+}
+.label:hover {
+  background-color: #d34444;
+}
+input[type="checkbox"] + label {
+  border: 1px solid transparent;
+}
+input[type="checkbox"]:checked + label {
+  border: 1px solid black;
+}
 
-  .label img{
-    padding: .25rem;
-  }
+.label img {
+  padding: 0.25rem;
+}
+
+.settings,
+h1 {
+  padding: 1rem;
+}
